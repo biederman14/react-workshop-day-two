@@ -1,14 +1,14 @@
 import React from 'react'
+import Button from './Button'
 
 const Counter = props => (
     <main>
-        <button onClick={props.decrement}>
-          Decrement
-        </button>
+       
+       <Button behavior={props.decrement} 
+            textContent={"Decrement"}/>
         {props.count}
-        <button onClick={props.increment}>
-          Increment
-        </button>
+        <Button behavior={props.increment} 
+            textContent={"Increment"}/>
       </main>
 )
 
